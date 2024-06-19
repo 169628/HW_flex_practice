@@ -34,6 +34,7 @@
 }
 
 .navbar {
+  padding: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -46,7 +47,7 @@
 .nav-link {
   text-decoration: none;
   color: #02cb97;
-  padding: 10px 20px;
+  padding: 15px 20px;
   font-weight: 600;
 }
 .nav-link:hover {
@@ -55,14 +56,42 @@
 
 /* container */
 .banner {
-  padding: 50px 0;
+  padding: 80px 0;
+  margin-bottom: 30px;
   background-image: url("../images/banner.png");
 }
 .headline {
-  margin: 30px 0;
+  padding: 20px 20px;
+  background-color: black;
+  opacity: 0.6;
+}
+.headline-title {
+  margin: 0;
   color: white;
 }
 
-/*
+.course {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.course-item {
+  width: 300px;
+  list-style: none;
+  border-left: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 
+.course-img {
+  width: 290px;
+}
+
+/*
+fb旁邊的那條線
+headline白不起來
 */
