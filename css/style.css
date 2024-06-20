@@ -20,6 +20,7 @@
 }
 .fb-border {
   border-right: 1px solid black;
+  /* fb旁邊的那條線，看起來太長了 */
 }
 .third-party-link {
   text-decoration: none;
@@ -68,6 +69,7 @@
 .headline-title {
   margin: 0;
   color: white;
+  /* 這裡的白色被上面的background給蓋住了，不會改 */
 }
 
 .course {
@@ -76,22 +78,136 @@
   justify-content: space-around;
 }
 .course-item {
-  width: 300px;
+  width: 320px;
   list-style: none;
+  padding: 20px;
   border-left: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
   border-right: 1px solid #dbdbdb;
+  box-shadow: 0 10px 6px -6px #777;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
-
-.course-img {
-  width: 290px;
+.course-title {
+  margin: 0;
+}
+.course-intro {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* 畫面應該要看起看是靠左邊的，但是都不夠左邊 */
+}
+.course-p {
+  margin: 0;
+}
+.course-ul {
+  padding: 0;
+}
+.course-li {
+  list-style-type: disc;
 }
 
-/*
-fb旁邊的那條線
-headline白不起來
-*/
+.compare-title {
+  margin-top: 50px;
+  text-align: center;
+}
+.compare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.compare-table th,
+.compare-table td,
+.compare-table tr {
+  width: 230px;
+  padding: 5px 10px;
+  margin: 0;
+  border-top: 1px #dbdbdb solid;
+  border-bottom: 1px #dbdbdb solid;
+  border-collapse: collapse;
+  /* 為什麼我還是有2條線 TAT */
+}
+.compare-table th {
+  text-align: left;
+}
+.compare-thead {
+  background-color: #f7f7f7;
+}
+.compare-color {
+  color: #039f6f;
+}
+
+.contact {
+  margin-top: 40px;
+  padding: 20px 10px;
+  background: linear-gradient(to bottom, #00644a, #009872);
+}
+.contact-title {
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+.contact-main {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact-textarea {
+  width: 400px;
+  border: none;
+  border-radius: 2px;
+}
+.contact-user-info {
+  margin: 0;
+  padding: 0;
+}
+.contact-item {
+  width: 400px;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.contact-subtitle {
+  margin: 0;
+  font-size: 15px;
+  color: white;
+}
+.contact-input {
+  display: block;
+  width: 400px;
+  height: 30px;
+  padding: 1px 4px;
+  border: none;
+  border-radius: 2px;
+}
+.btn-area {
+  text-align: right;
+}
+.contact-btn {
+  width: 50px;
+  padding: 3px 6px;
+  background-color: #00cc99;
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+
+/* footer */
+.footer {
+  padding: 20px 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info {
+  padding: 0;
+}
+.info-item {
+  list-style-type: none;
+}
+.info-link {
+  text-decoration: none;
+  color: #f95995;
+}

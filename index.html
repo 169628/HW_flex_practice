@@ -44,23 +44,24 @@
       <div class="container">
         <div class="banner">
           <div class="headline">
-            <h1 class="headline-title" >六角學院</h1>
-            <h1 class="headline-title" >讓您奠定良好的前端基礎</h1>
+            <h1 class="headline-title">六角學院</h1>
+            <h1 class="headline-title">讓您奠定良好的前端基礎</h1>
           </div>
         </div>
         <ul class="course">
           <li class="course-item">
             <img src="./images/html.png" alt="html logo" class="course-img" />
             <h3 class="course-title">Html 5 基礎教學</h3>
-            <p>
+            <p class="course-intro">
               主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方式。
             </p>
           </li>
           <li class="course-item">
             <img src="./images/rwd.png" alt="rwd logo" class="course-img" />
             <h3 class="course-title">響應式網站設計</h3>
-            <p>
-              響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生聊解行動版開發技巧。
+            <p class="course-intro">
+              響應式網站設計 (Responsive web
+              design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生聊解行動版開發技巧。
             </p>
           </li>
           <li class="course-item">
@@ -70,34 +71,68 @@
               class="course-img"
             />
             <h3 class="course-title">jQuery實戰教學</h3>
-            <p>
-              本課程有以下特色
-              <ul>
-                <li>瞭解變數的使用方法</li>
-                <li>學習並操作DOM</li>
-                <li>學習基本數學運算方法</li>
-                <li>套件的操作及運用</li>
+            <div class="course-intro">
+              <p class="course-p">本課程有以下特色</p>
+              <ul class="course-ul">
+                <li class="course-li">瞭解變數的使用方法</li>
+                <li class="course-li">學習並操作DOM</li>
+                <li class="course-li">學習基本數學運算方法</li>
+                <li class="course-li">套件的操作及運用</li>
               </ul>
-            </p>
+            </div>
           </li>
         </ul>
         <h2 class="compare-title">線上及實體課程的差異</h2>
-        <table class="compare">
-          <thead>
-            <tr>
-              <th>1</th>
-              <th>2</th>
-              <th>3</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>內容</td>
-              <td>內容</td>
-              <td>內容</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="compare">
+          <table class="compare-table">
+            <thead class="compare-thead">
+              <tr>
+                <th>項目</th>
+                <th>Hex School 線上課程</th>
+                <th>一般線上課程</th>
+                <th>實體課程</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>費用</td>
+                <td class="compare-color">較低</td>
+                <td class="compare-color">較低</td>
+                <td>較高</td>
+              </tr>
+              <tr>
+                <td>學習效果</td>
+                <td>一般</td>
+                <td class="compare-color">較低</td>
+                <td class="compare-color">很好</td>
+              </tr>
+              <tr>
+                <td>Code review</td>
+                <td class="compare-color">有</td>
+                <td>無</td>
+                <td>不一定</td>
+              </tr>
+              <tr>
+                <td>課程更新速度</td>
+                <td class="compare-color">普通</td>
+                <td class="compare-color">普通</td>
+                <td>較慢</td>
+              </tr>
+              <tr>
+                <td>多次複習</td>
+                <td class="compare-color">可</td>
+                <td>可</td>
+                <td>不可</td>
+              </tr>
+              <tr>
+                <td>字幕</td>
+                <td class="compare-color">有</td>
+                <td>不一定</td>
+                <td>板書</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <div class="contact">
           <h2 class="contact-title">對我們課程有興趣嗎?</h2>
           <h2 class="contact-title">歡迎留下您的資料</h2>
@@ -108,19 +143,31 @@
               class="contact-textarea"
             ></textarea>
             <ul class="contact-user-info">
-              <li>
+              <li class="contact-item">
                 <p class="contact-subtitle">姓名</p>
-                <input type="text" class="contact-input" />
+                <input
+                  type="text"
+                  class="contact-input"
+                  placeholder="六角學院"
+                />
               </li>
-              <li>
-                <p class="contact-subtitle">姓名</p>
-                <input type="text" class="contact-input" />
+              <li class="contact-item">
+                <p class="contact-subtitle">電話</p>
+                <input
+                  type="text"
+                  class="contact-input"
+                  placeholder="0912345678"
+                />
               </li>
-              <li>
-                <p class="contact-subtitle">姓名</p>
-                <input type="text" class="contact-input" />
+              <li class="contact-item">
+                <p class="contact-subtitle">信箱</p>
+                <input
+                  type="text"
+                  class="contact-input"
+                  placeholder="hexschool@mail.com"
+                />
               </li>
-              <li>
+              <li class="contact-item btn-area">
                 <button class="contact-btn">送出</button>
               </li>
             </ul>
@@ -131,10 +178,10 @@
         <img class="logo-grey" src="images/footerLogo.png" alt="footer logo" />
         <ul class="info">
           <li class="info-item">
-            聯絡我們:<a href="#" class="info-link">hexschool@gmail.com</a>
+            聯絡我們 : <a href="#" class="info-link">hexschool@gmail.com</a>
           </li>
           <li class="info-item">
-            電話:<a href="#" class="info-link">0999123456</a>
+            電話 : <a href="#" class="info-link">0999123456</a>
           </li>
         </ul>
       </div>
